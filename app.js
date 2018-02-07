@@ -1,4 +1,4 @@
-var textarea = document.getElementById("text-area");
+var textArea = document.getElementById("text-area");
 
 var img = document.getElementById("img");
 
@@ -6,35 +6,35 @@ var paragraph = document.getElementById("paragraph");
 
 var button = document.getElementById("button");
 
-var Lunch1 = {
+var lunch1 = {
 imagesrc : "",
 name : "Cheseburger",
 adjective : "12 Inch",
 verb : "Roller-Skating",
 };
 
-var Lunch2 = {
+var lunch2 = {
     imagesrc : "",
     name : "Hot Dog",
     adjective : "Juicy",
     verb : "Surfing",
     };
 
-var Lunch3 = {
+var lunch3 = {
     imagesrc : "",
     name : "Salad",
     adjective : "Moist",
     verb : "Swimming",
     };
 
-var Lunch4 = {
+var lunch4 = {
     imagesrc : "",
     name : "Clam Chowder",
     adjective : "Thicc",
     verb : "Swishing",
     };
 
-var Lunch5 = {
+var lunch5 = {
     imagesrc : "",
     name : "Taco",
     adjective : "Sexy",
@@ -42,10 +42,10 @@ var Lunch5 = {
      };
 
 var lunchOptions = [lunch1, lunch2, lunch3, lunch4, lunch5];     
-
 button.addEventListener("click", function(){
-var random = Math.random();
-console.log(random);
+    var randomNumber = Math.floor((Math.random() *5) +0);
+    textArea.innerHTML= lunchOptions[randomNumber].name
+    
 });     
  
      
