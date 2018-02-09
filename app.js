@@ -44,6 +44,7 @@ var lunch5 = {
 var lunchOptions = [lunch1, lunch2, lunch3, lunch4, lunch5];     
 button.addEventListener("click", function(){
     var randomNumber = Math.floor((Math.random() *5) +0);
+       img.src = lunchOptions[randomNumber].imagesrc;
     textArea.innerHTML= lunchOptions[randomNumber].adjective+lunchOptions[randomNumber].verb+lunchOptions[randomNumber].name
-    img.src = lunchOptions[randomNumber].imagesrc;
+
 });
